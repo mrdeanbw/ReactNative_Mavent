@@ -1,0 +1,172 @@
+<Image source={require('../images/background.jpg')} style={styles.backgroundImage}>
+<View style={styles.container}>
+  <Text>
+    {this.state.details.name}
+  </Text>
+  <Text>
+    {this.state.details.gender}
+  </Text>
+  <Text>
+    {this.state.details.email}
+  </Text>
+  <Text>
+    {this.state.details.id}
+  </Text>
+
+
+
+  async fetchdetails() {
+    const getID = 'https://graph.facebook.com/me?access_token=' + this.props.token;
+    fetch(getID)
+      .then((response) => response.json())
+        .then((responseData) => this.setState({ id: responseData.id }, () => {
+          const fetchdetails = 'https://graph.facebook.com/v2.9/' + this.state.id + '?fields=name,first_name,last_name,gender,age_range,email&access_token=' + this.props.token;
+          fetch(fetchdetails)
+            .then((response) => response.json())
+              .then((responseData1) => this.setState({ details: responseData1 }));
+          }
+       ));
+    }
+
+    <View style={styles.ball} />
+    <Image source={require('../images/profile.png')} style={{ height: 150, width: 150, borderRadius: 75, position: 'absolute' }} />
+
+    <SocialIcon
+      type='twitter'
+    />
+
+'rgba(0,0,0,0.05)'
+
+
+
+          <View style={styles.container}>
+            <View>
+              <Image source={require('../../../assets/images/mavent_logo.png')} style={styles.LogoImage} />
+            </View>
+            <View style={styles.Form}>
+                <View>
+                    <TextInput
+                        placeholder='Email'
+                        placeholderTextColor='white'
+                        returnKeyLabel='Next'
+                        onSubmitEditing={() => this.password.focus()}
+                        keyboardType='email-address'
+                        autoCapitalize='none'
+                        autoCorrect={false}
+                        style={styles.TextInput}
+                        underlineColorAndroid='transparent'
+                        onChangeText={this.onEmailChange.bind(this)}
+                        value={this.props.email}
+                    />
+                </View>
+                <View>
+                    <TextInput
+                        //color="white"
+                        placeholder="Password"
+                        placeholderTextColor="white"
+                        returnKeyLabel="Go"
+                        //backgroundColor="#ffffff1F"
+                        onSubmitEditing={() => this.password.focus()}
+                        secureTextEntry
+                        style={styles.TextInput}
+                        underlineColorAndroid="transparent"
+                        ref={(input) => this.password = input}
+                        onChangeText={this.onPasswordChange.bind(this)}
+                        value={this.props.password}
+                    />
+                </View>
+            </View>
+            <View style={styles.ForgetPassword}>
+              <Text
+                style={{ color: 'white', textDecorationLine: 'underline' }}>Forgot your password?
+              </Text>
+            </View>
+
+            <View style={styles.Button}>
+                <Button
+                    raised
+                    title='LOGIN'
+                    iconRight
+                    icon={{ name: 'send' }}
+                    backgroundColor='#0F3B5F'
+
+                    onPress={() => {
+                                alert(this.props.email);
+                  }}
+                />
+                <SocialIcon
+                  raised
+                  title='Sign In With Facebook'
+                  button
+                  type='facebook'
+                  style={{ borderRadius: 8, width: 0.7 * SCREEN_WIDTH }}
+
+                  onPress={() => {
+                    this.props.facebookLogin();
+                    this.onAuthComplete(this.props);
+                }}
+                />
+
+            </View>
+            <View style={styles.Register}>
+              <Text style={{ color: 'white' }}>Sign up with us <Text style={{ color: 'white', textDecorationLine: 'underline' }} onPress={() => { Actions.register(); }} >now!</Text></Text>
+            </View>
+          </View>
+
+
+<Button raised title="Login" large backgroundColor='#0B486B' fontSize={22} buttonStyle={{ width: 0.55 * SCREEN_WIDTH, elevation: 10 }} />
+<View style={{ height: 40 }}></View>
+<Button raised title="Register" large backgroundColor='white' color='#0B486B' fontSize={22} buttonStyle={{ width: 0.55 * SCREEN_WIDTH, elevation: 10, borderWidth: 1, borderColor: '#0B486B' }} />
+
+
+
+<Scene key="welcomescreen" component={WelcomeScreen} hideNavBar />
+<Scene key="login" component={Login} title="Please Login" hideNavBar renderBackButton={() => (null)} panHandlers={null} />
+
+<Scene key="registerMain" component={registerMain} title="Create account" hideNavBar={false} />
+<Scene key="registerName" component={registerName} title="Name" hideNavBar={false} />
+<Scene key="registerEmail" component={registerEmail} title="Email Address" hideNavBar={false} />
+<Scene key="registerDOB" component={registerDOB} title="Date of Birth" hideNavBar={false} />
+<Scene key="registerGender" component={registerGender} title="Gender" hideNavBar={false} />
+<Scene key="registerPassword" component={registerPassword} title="Password" hideNavBar={false} />
+<Scene key="registerTnC" component={registerTnC} title="Terms & Privacy" hideNavBar={false} />
+
+
+<View style={styles.offered>
+  <Text style={{ fontSize: 12, color: 'white' }}>Offer:</Text>
+  <Text style={{ fontSize: 16, color: 'white' }}>$45</Text>
+</View>
+
+
+
+return (
+  <View key={request.id} style={{ height: 100, width: SCREEN_WIDTH, borderWidth: 1, borderColor: '#ccc', flexDirection: 'row' }}>
+    <View style={{ flex: 1.2, justifyContent: 'center', alignItems: 'center' }}>
+      <Image source={require('../../assets/images/profile.png')} style={{ height: 60, width: 60, borderRadius: 30 }} />
+      <Text>request.Dist</Text>
+    </View>
+
+    <View style={{ flex: 3, paddingLeft: 3, paddingTop: 4 }}>
+      <Text style={{ fontSize: 12, color: '#ccc' }}>request.Name</Text>
+      <View style={{ height: 2 }}></View>
+      <Text style={{ fontSize: 14, fontWeight: 'bold' }}>request.Title</Text>
+      <View style={{ height: 2 }}></View>
+      <Text style={{ fontSize: 13 }}>request.Message</Text>
+    </View>
+
+    <View style={{ flex: 1.5, alignItems: 'center' }}>
+      <View style={this.state.offered ? styles.offered : styles.n_offered}>
+        <Text style={{ fontSize: 12, color: 'white' }}>Offer:</Text>
+        <Text style={{ fontSize: 16, color: 'white' }}>request.price</Text>
+      </View>
+
+      <View style={{ marginTop: 4, flexDirection: 'row', justifyContent: 'space-around', width: 80 }}>
+          <Icon name='clear' size={30} iconStyle={{ paddingLeft: 2, borderWidth: 1, borderRadius: 3, borderColor: '#ccc' }} />
+          <Icon name='done' size={30} iconStyle={{ paddingLeft: 2, borderWidth: 1, borderRadius: 3, borderColor: '#ccc' }} />
+      </View>
+    </View>
+
+  </View>
+);
+
+ced0ce gray color

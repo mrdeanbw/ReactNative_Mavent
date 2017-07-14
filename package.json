@@ -1,0 +1,33 @@
+{
+  "name": "Mavent",
+  "version": "0.0.0",
+  "description": "Connecting Neighbour, Changing Lives.",
+  "author": "bl4ckicex",
+  "private": true,
+  "main": "main.js",
+  "dependencies": {
+    "axios": "^0.16.2",
+    "expo": "17.0.0",
+    "lodash": "^4.17.4",
+    "react": "16.0.0-alpha.6",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-17.0.0.tar.gz",
+    "react-native-datepicker": "^1.5.1",
+    "react-native-elements": "^0.12.2",
+    "react-native-grid-component": "^1.0.6",
+    "react-native-looped-carousel": "^0.1.7",
+    "react-native-maps": "^0.15.2",
+    "react-native-modal-picker": "0.0.16",
+    "react-native-router-flux": "^3.39.1",
+    "react-native-scrollable-tab-view": "^0.6.6",
+    "react-native-simple-picker": "^1.2.1",
+    "react-native-star-rating": "^1.0.7",
+    "react-native-vector-icons": "^4.2.0",
+    "react-redux": "^5.0.5",
+    "redux": "^3.6.0",
+    "redux-persist": "^4.8.0",
+    "redux-thunk": "^2.2.0"
+  },
+  "devDependencies": {
+    "eslint-config-rallycoding": "^3.2.0"
+  }
+}

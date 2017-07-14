@@ -1,0 +1,65 @@
+[
+  {
+    "id": 0,
+    "Name": "Cindy Lim",
+    "Title": "Photographer/Videographer",
+    "Dist": "0.2 km",
+    "price": "$30"
+  },
+  {
+    "id": 1,
+    "Name": "Xiao Hei",
+    "Title": "Photographer/Videographer",
+    "Dist": "0.3 km",
+    "price": "$42"
+  },
+  {
+    "id": 2,
+    "Name": "Muhd Asraf",
+    "Title": "Photographer/Videographer",
+    "Dist": "0.4 km",
+    "price": "$44"
+  },
+  {
+    "id": 3,
+    "Name": "Ben Tan",
+    "Title": "Photographer/Videographer",
+    "Dist": "0.5 km",
+    "price": "$20"
+  },
+  {
+    "id": 4,
+    "Name": "Lee Wei Men",
+    "Title": "Photographer/Videographer",
+    "Dist": "0.8 km",
+    "price": "$33"
+  },
+  {
+    "id": 5,
+    "Name": "Jayden Chan",
+    "Title": "Photographer/Videographer",
+    "Dist": "1 km",
+    "price": "$35"
+  },
+  {
+    "id": 6,
+    "Name": "Ng Jun Hao",
+    "Title": "Photographer/Videographer",
+    "Dist": "1.5 km",
+    "price": "$25"
+  },
+  {
+    "id": 7,
+    "Name": "Ang Wei Wei",
+    "Title": "Photographer/Videographer",
+    "Dist": "1.8 km",
+    "price": "$99"
+  },
+  {
+    "id": 8,
+    "Name": "Lim Jun Kai",
+    "Title": "Photographer/Videographer",
+    "Dist": "2 km",
+    "price": "$30"
+  }
+]

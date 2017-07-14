@@ -1,0 +1,56 @@
+[
+  {
+    "id": 0,
+    "Reviewer_Name": "Albert Lim",
+    "content": "Great work! Absolute maven!",
+    "rating": "5"
+  },
+  {
+    "id": 1,
+    "Reviewer_Name": "Kim Song Jung",
+    "content": "Punctual and polite!",
+    "rating": "2"
+  },
+  {
+    "id": 2,
+    "Reviewer_Name": "Tan Hock Seng",
+    "content": "Great Skills!",
+    "rating": "3"
+  },
+  {
+    "id": 3,
+    "Reviewer_Name": "Jimmy Lim",
+    "content": "Recommend to others!",
+    "rating": "5"
+  },
+  {
+    "id": 4,
+    "Reviewer_Name": "Wilson Tan",
+    "content": "Great to have such neighbour!",
+    "rating": "5"
+  },
+  {
+    "id": 5,
+    "Reviewer_Name": "Jesus Woh",
+    "content": "Cheap and reliable!",
+    "rating": "4"
+  },
+  {
+    "id": 6,
+    "Reviewer_Name": "Willy Wong",
+    "content": "Going the extra mile for me!",
+    "rating": "4"
+  },
+  {
+    "id": 7,
+    "Reviewer_Name": "Apple Tan",
+    "content": "Pleasant experience!",
+    "rating": "4"
+  },
+  {
+    "id": 8,
+    "Reviewer_Name": "Kim Kim Lim",
+    "content": "Great math tutor!",
+    "rating": "3"
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "extends": "rallycoding",
+  "env": {
+    "browser": true
+    },
+  "globals": {
+      "fetch": true
+   },
+  "rules": {
+      "no-mixed-spaces-and-tabs": 0,
+      "linebreak-style": 0,
+      "arrow-body-style": 0,
+      "max-len": 0,
+   }
+}

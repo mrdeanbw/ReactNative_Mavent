@@ -1,0 +1,22 @@
+{
+  "name": "Mavent",
+  "description": "Connecting Neighbour, Changing Lives.",
+  "slug": "Mavent",
+  "privacy": "unlisted",
+  "sdkVersion": "17.0.0",
+  "version": "1.0.0",
+  "orientation": "portrait",
+  "primaryColor": "#cccccc",
+  "icon": "./assets/icons/app.png",
+  "loading": {
+    "icon": "./assets/icons/loading.png",
+    "hideExponentText": false
+  },
+  "packagerOpts": {
+    "assetExts": ["ttf", "mp4"]
+  },
+  "ios": {
+    "supportsTablet": true
+  },
+  "androidStatusBarColor": "#0A3E5C"
+}
